@@ -11,7 +11,8 @@ WORKDIR /next-advanced-apollo-starter
 
 RUN yarn install
 RUN yarn build
-EXPOSE 3000 5555
+RUN node esbuildfile.js
+# EXPOSE 3000 5555
 # CMD yarn dev
 
 
@@ -25,9 +26,9 @@ COPY --from=BUILD_IMAGE ./next-advanced-apollo-starter/.next/standalone ./standa
 COPY --from=BUILD_IMAGE ./next-advanced-apollo-starter/.next/static ./standalone/.next/static
 
 WORKDIR /standalone
-
-EXPOSE 3000
-CMD node server.js
+RUN ls -a
+EXPOSE 3000 5555
+CMD node custom-server.js
 
 
 

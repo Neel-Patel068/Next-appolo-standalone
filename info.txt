@@ -1,0 +1,7 @@
+extra modules that are not mandatory during project run:-
+--> esbuild
+--> uppercase-first
+
+
+
+
