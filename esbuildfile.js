@@ -23,7 +23,7 @@ const replaceNextImports = {
    require("esbuild")
     .build({
       entryPoints: ["custom-server.js"],
-      minify: true,
+      minify: false,
       platform: "node",
       bundle: true,
       external: ["next"],

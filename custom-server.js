@@ -1,7 +1,9 @@
 const { createServer } = require('http')
 const { parse } = require('url')
 const next = require('next')
-// const _ = require('lodash');
+const _ = require('lodash');
+import hello from './neel'
+
 // const hello = require('./neel');
 
 console.log("Custom server started!!");
@@ -22,9 +24,9 @@ app.prepare().then(() => {
       // This tells it to parse the query portion of the URL.
       
       const parsedUrl = parse(req.url, true)
-      // const answer = _.partition([1, 2, 3, 4], n => n % 2);
-      // console.log(answer);
-      // hello();
+      const answer = _.partition([1, 2, 3, 4], n => n % 2);
+      console.log(answer);
+      hello();
       await handle(req, res, parsedUrl)
     } catch (err) {
       console.error('Error occurred handling', req.url, err)
