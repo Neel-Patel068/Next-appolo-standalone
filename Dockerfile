@@ -1,3 +1,6 @@
+# With Output File Tracing Feature (standalone) enabled
+# Uncomment below lines to enable this feature.
+
 # base image
 FROM alpine AS BUILD_IMAGE
 
@@ -34,19 +37,8 @@ CMD node custom-server.js
 
 
 
-
-
-# RUN if [ -d "public" ] ; then cp public ./next/standalone/public fi
-# COPY .next/static .next/standalone/.next/static
-# RUN find ./next-advanced-apollo-starter -mindepth 1 ! -regex '^./.next/standalone\(/.*\)?' -delete
-# RUN ls -a
-# WORKDIR /.next/standalone
-# RUN ls -a
-# RUN node server.js
-# For standalone folder
-
-
-# Following commands from previous file
+# The original docker code  without Output File Tracing feature disabled
+# Uncomment below lines for Output File Tracing feature disabled
 # FROM node:16-alpine as builder
 
 # RUN apk add curl --no-cache

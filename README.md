@@ -1,16 +1,15 @@
 <h1 align="center">
-next-advanced-apollo-starter
+Next Apollo With Output File tracing feature enabled
 </h1>
 
 <h4 align="center">
-  Advanced and minimalistic Next.js and Apollo starter
+  Project To show how to enable Output File tracing (standalone) feature
 </h4>
 
 <p align="center">
   <a href="#whats-included">What's included</a> •
   <a href="#getting-started">Getting Started</a> •
   <a href="#apollo-usage">Apollo usage</a> •
-  <a href="#tests">Tests</a> •
   <a href="#docker-usage">Docker usage</a>
 </p>
 
@@ -18,6 +17,8 @@ next-advanced-apollo-starter
 
 ### Features
 
+- Custom server in Next JS (https://nextjs.org/docs/pages/building-your-application/configuring/custom-server)
+- Output File Tracing (Standalone) feature of Next JS (https://nextjs.org/docs/pages/api-reference/next-config-js/output) 
 - Latest [Next.js](https://nextjs.org/) version.
 - Latest packages updates.
 - GraphQL [Apollo](https://www.apollographql.com/docs/react/essentials/get-started/) client with built-in
@@ -25,20 +26,20 @@ next-advanced-apollo-starter
 - Works both via _Client-Side Rendering_ and _Server-Side Rendering_;
 - [TypeScript](https://www.typescriptlang.org/) environment.
 - [Normalize.css](https://necolas.github.io/normalize.css/) included.
-- _No custom server_.
 
 ### Developer experience
 
+- [Docker](https://www.docker.com/) configuration to run in independent environment with Output File Tracing feature enabled and disabled.
+
+It also includes other tools and technologies like, 
 - Testing environment via [Jest](https://jestjs.io/)
   and [@testing-library/react](https://testing-library.com/docs/react-testing-library/intro).
 - Configured [GraphQL Code Generator](https://www.the-guild.dev/graphql/codegen). Simply run `yarn codegen`.
 - [Prettier](https://prettier.io/) for code formatting.
-- Debug configuration for [VSCode](https://code.visualstudio.com/).
-- [Docker](https://www.docker.com/) configuration to serve **production-ready** build with Nginx.
 
 ## Getting started
 
-No extra knowledge needed to get started, see [Next.js documentation](https://nextjs.org/docs).
+See [Next.js documentation](https://nextjs.org/docs) and It's advance feature of version 12.
 
 ## GraphQL Code Generation
 
@@ -71,5 +72,5 @@ the [official Next.js documentation](https://nextjs.org/docs).
 To build and run Dockerized **production-ready** container, run:
 
 ```bash
-docker-compose up --build
+docker build -t my-feature .
 ```
