@@ -9,7 +9,6 @@ Next Apollo With Output File tracing feature enabled
 <p align="center">
   <a href="#whats-included">What's included</a> •
   <a href="#getting-started">Getting Started</a> •
-  <a href="#apollo-usage">Apollo usage</a> •
   <a href="#docker-usage">Docker usage</a>
 </p>
 
@@ -41,26 +40,11 @@ It also includes other tools and technologies like,
 
 See [Next.js documentation](https://nextjs.org/docs) and It's advance feature of version 12.
 
-## GraphQL Code Generation
-
-Generated interfaces for co-located _.graphql_ files. See the [example](./src/graphql/queries).
-
-```bash
-yarn codegen
-```
 
 ## Apollo usage
 
 - [Client-Side Rendering (CSR) example](./src/pages/users-csr.tsx).
 - [Server-Side Rendering (SSR) example](./src/pages/users-ssr.tsx).
-
-## Tests
-
-[Jest](https://jestjs.io/) is a great tool for testing. To run tests simply use `test` script from `package.json`:
-
-```bash
-yarn test
-```
 
 ---
 
@@ -74,3 +58,17 @@ To build and run Dockerized **production-ready** container, run:
 ```bash
 docker build -t my-feature .
 ```
+
+
+## Project's screenshorts and video
+
+### Before Output File Tracing Feature Disabled
+
+<img width="1715" alt="feature disabled" src="https://user-images.githubusercontent.com/76865575/236692520-dad19bd3-870c-430b-80a6-18b232e2f50c.png">
+
+
+### After Output Tracing Feature Enabled
+
+<img width="1727" alt="feature enabled" src="https://user-images.githubusercontent.com/76865575/236692527-e222b278-73db-4371-869e-168a25edc814.png">
+
+Video Link (https://drive.google.com/file/d/1PMqXemhBKD5OSGgjnr_gJvIh8el6wbgn/view?usp=sharing)
